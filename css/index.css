@@ -140,7 +140,7 @@ h3 {
 @media only screen and (max-width: 1600px) {
     #INTRODUCTION {order: 2; width: 35%}
     #PLAYERLIST {order: 3; width: 35% }
-    #CONMEBOL {order: 4; width: 35% }
+    #HONOURS {order: 4; width: 35% }
     #CONCACAF {order: 5; width: 35% }
     #OFC {order: 6; width: 35% }
     #UEFA {order: 7; width: 35% }
@@ -162,8 +162,8 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
     #INTRODUCTION {order: 2; width: 80%}
-    #PLAERLIST {order: 3; width: 80% }
-    #CONMEBOL {order: 4; width: 80% }
+    #PLAYERLIST {order: 3; width: 80% }
+    #HONOURS {order: 4; width: 80% }
     #CONCACAF {order: 5; width: 80% }
     #OFC {order: 6; width: 80% }
     #UEFA {order: 7; width: 80% }
