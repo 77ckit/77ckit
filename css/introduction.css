@@ -1,0 +1,34 @@
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+    line-height: 0.5em;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+p2 {
+    color: Linen ;
+}
+
+td {
+    color: gold;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#Ranks div {
+    display:flex;
+    flex-flow:row-reverse wrap;
+}
+
