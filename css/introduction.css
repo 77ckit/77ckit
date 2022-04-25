@@ -32,3 +32,7 @@ img {
     flex-flow:row-reverse wrap;
 }
 
+#header {
+    background: rgb(24, 23, 51);
+    width: 105%;
+}
