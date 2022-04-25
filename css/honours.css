@@ -3,6 +3,10 @@
     height: 500;
 }
 
+#header {
+    margin: 25px 25%;
+}
+
 .Cups {
     width: 50%;
     background: rgb(255, 255, 255);
