@@ -31,7 +31,7 @@ h3 {
 
 #header {
     order: 1;
-    height: auto;
+    height: 300px;
     width: 105%;
     background-color: #171BD3;
     margin: -8px -50px 5px -8px;
