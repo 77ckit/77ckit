@@ -83,7 +83,7 @@ body{
 
 p {
     color: black;
-    position:relative;
+    line-height: 100%;
     text-align: center;
     font-weight:bold;
 }
