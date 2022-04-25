@@ -49,10 +49,6 @@ img {
 
 #hyperlink {
     background: rgb(237, 187, 0);
-    padding-left: 10px;
-    box-sizing: border-box;
-}
-
-#hyperlink:hover a{
-    text-decoration: underline;
+    width: 100%;
+    padding-left: 15px;
 }
