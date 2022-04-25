@@ -2,7 +2,7 @@ body {
     background-color: rgb(228, 238, 247);
 }
 
-#INTRODUCTION, #PLAYERLIST, #CONMEBOL, #CONCACAF, #OFC, #UEFA {
+#INTRODUCTION, #PLAYERLIST, #HONOURS, #CONCACAF, #OFC, #UEFA {
     background: rgb(255, 255, 255);
     border-radius: 8px;
     margin: 5px;
@@ -104,7 +104,7 @@ h3 {
     height: auto;
 }
 
-#CONMEBOL {
+#HONOURS {
     order: 4;
     width: 25%;
     height: auto;
