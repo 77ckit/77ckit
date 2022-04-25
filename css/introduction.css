@@ -36,3 +36,23 @@ img {
     background: rgb(24, 23, 51);
     padding-right: 16px;
 }
+
+#hyperlink a {
+    color: black;
+    font-weight: bold;
+    margin-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#hyperlink {
+    background: rgb(237, 187, 0);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#hyperlink:hover a{
+    text-decoration: underline;
+}
