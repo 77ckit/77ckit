@@ -2,7 +2,7 @@ body {
     background-color: rgb(228, 238, 247);
 }
 
-#INTRODUCTION, #PLAYERLIST, #HONOURS, #CONCACAF, #OFC, #UEFA {
+#INTRODUCTION, #PLAYERLIST, #HONOURS, #ALBUM, #OFC, #UEFA {
     background: rgb(255, 255, 255);
     border-radius: 8px;
     margin: 5px;
@@ -110,7 +110,7 @@ h3 {
     height: auto;
 }
 
-#CONCACAF {
+#ALBUM {
     order: 5;
     width: 25%;
     height: auto;
@@ -141,7 +141,7 @@ h3 {
     #INTRODUCTION {order: 2; width: 35%}
     #PLAYERLIST {order: 3; width: 35% }
     #HONOURS {order: 4; width: 35% }
-    #CONCACAF {order: 5; width: 35% }
+    #ALBUM {order: 5; width: 35% }
     #OFC {order: 6; width: 35% }
     #UEFA {order: 7; width: 35% }
 
@@ -164,7 +164,7 @@ h3 {
     #INTRODUCTION {order: 2; width: 80%}
     #PLAYERLIST {order: 3; width: 80% }
     #HONOURS {order: 4; width: 80% }
-    #CONCACAF {order: 5; width: 80% }
+    #ALBUM {order: 5; width: 80% }
     #OFC {order: 6; width: 80% }
     #UEFA {order: 7; width: 80% }
 
