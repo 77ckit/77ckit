@@ -1,13 +1,24 @@
 body {
-    background-color: rgb(228, 238, 247);
+    background-image: url(../image/bg8.png);
+    background-size:cover;
 }
 
 #INTRODUCTION, #PLAYERLIST, #HONOURS, #ALBUM, #SHORTS, #CONTACT {
     background: rgb(255, 255, 255);
-    border-radius: 8px;
     margin: 5px;
     margin-top: 25px;
     margin-bottom: 25px;
+    border: 1px solid black;
+    -webkit-box-shadow: 8px 8px 5px #333;
+}
+
+#box {
+    order: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #flex-container {
@@ -36,12 +47,15 @@ h3 {
     order: 1;
     height: 200px;
     width: 105%;
-    background-color: #171BD3;
-    margin: -8px -50px 5px -8px;
+    background-color: rgb(24, 23, 51);
+    margin-top: -12px;
+    margin-left: -28px;
+    padding-right: 20px;
+    border: 2px solid rgb(48, 44, 44); 
 }
 #header img {
     float: left;
-    margin: 0%;
+    margin-top: 30px;
 }
 #header div{
     margin: auto;
@@ -51,16 +65,16 @@ h3 {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    background-color: #171BD3;
+    background-color: rgb(24, 23, 51);
+    border: 2px solid rgb(48, 44, 44); 
     text-shadow: 2px 2px 2px black;
-    border-radius: 10px;
     display: inline-block;
     font-weight: bold;
 }
 
 #header a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     line-height: 1.2em;
     color: white;
     display: block;
@@ -69,29 +83,31 @@ h3 {
 #header a:hover {
     background-color: rgb(52, 222, 252);
     color: black;
-    border-radius: 10px;
     text-shadow: 2px 2px 2px white;
+    border-radius: 8px;
 }
 
 #header .sub {
     position: absolute;
     top: 165;
-    background-color: #171BD3;
+    background-color: rgb(24, 23, 51);
 }
 
 #header .sub a:hover {
     background-color: rgb(52, 222, 252);
+    border-radius: 8px;
 }
 
 #header .sub li {
     overflow: hidden;
     height: 0px;
+    width: 0px;
     transition: height 500ms;
 }
 
 #header ul li:hover .sub li {
     height: 40px;
-    width: 500px;
+    width: auto;
 }
 
 
@@ -124,9 +140,6 @@ h3 {
     width: 25%;
     height: auto;
 }
-#CONTACT p {
-
-}
 
 #SHORTS {
     order: 7;
@@ -136,14 +149,16 @@ h3 {
 
 #footer {
     order: 8;
-    width: 105%;
+    width: 100%;
     height: auto;
-    background-color: #171BD3;
-    margin: 5px -50px 5px -8px;
+    background-color: rgb(24, 23, 51);
+    margin: 5px -50px 5px -66px;
+    padding-left: 32px;
     color: white;
+    border: 2px solid rgb(48, 44, 44); 
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1780px) {
     #INTRODUCTION {order: 2; width: 35%}
     #PLAYERLIST {order: 3; width: 35% }
     #HONOURS {order: 4; width: 35% }
@@ -164,9 +179,13 @@ h3 {
         color: white;
         text-align: center;
     }
+
+    #box {
+        width: 80%;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     #INTRODUCTION {order: 2; width: 80%}
     #PLAYERLIST {order: 3; width: 80% }
     #HONOURS {order: 4; width: 80% }
