@@ -160,7 +160,7 @@ h3 {
     border: 2px solid rgb(48, 44, 44); 
 }
 
-@media only screen and (max-width: 1815px) {
+@media only screen and (max-width: 1600px) {
     #INTRODUCTION {order: 2; width: 35%}
     #PLAYERLIST {order: 3; width: 35% }
     #HONOURS {order: 4; width: 35% }
@@ -187,7 +187,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1000px) {
     #INTRODUCTION {order: 2; width: 80%}
     #PLAYERLIST {order: 3; width: 80% }
     #HONOURS {order: 4; width: 80% }
