@@ -26,6 +26,9 @@
     clear: none;
     font-size: 18px;
 }
+.Cups:hover {
+    transform: scale(1.02);
+}
 
 h1 {
     color: white;
