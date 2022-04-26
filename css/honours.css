@@ -63,3 +63,14 @@ h2 {
 p {
     color: black;
 }
+
+@media only screen and (max-width: 1090px) {
+    .Cups img { 
+        float: inline-start; 
+    }
+
+    .Cupstext {
+        margin-right: 100px;
+        display: flex;
+    }
+}
