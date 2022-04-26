@@ -135,14 +135,14 @@ h3 {
     height: auto;
 }
 
-#CONTACT {
-    order: 6;
+#SHORTS {
+    order: 7;
     width: 25%;
     height: auto;
 }
 
-#SHORTS {
-    order: 7;
+#CONTACT {
+    order: 6;
     width: 25%;
     height: auto;
 }
@@ -163,8 +163,8 @@ h3 {
     #PLAYERLIST {order: 3; width: 35% }
     #HONOURS {order: 4; width: 35% }
     #ALBUM {order: 5; width: 35% }
-    #CONTACT {order: 6; width: 35% }
     #SHORTS {order: 7; width: 35% }
+    #CONTACT {order: 6; width: 35% }
 
     #flex-container {
         -webkit-justify-content: space-around;
