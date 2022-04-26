@@ -8,14 +8,20 @@
 
 .Cups {
     width: 50%;
-    background: rgb(254, 249, 231);
+    background: seashell;
     margin: 25px 25%;
     height: auto;
+    border-style:solid;
+    border-color: orange;
+    border-width:7px;
+    border-bottom-width:17px;
+    border-radius:1cm;
 }
 .Cups img { 
     float: left; 
 }
 .Cupstext {
+    font-weight: bold;
     display: inline-block;
     clear: none;
     font-size: 18px;
@@ -49,4 +55,8 @@ h2 {
     background: rgb(237, 187, 0);
     width: 100%;
     padding-left: 15px;
+}
+
+p {
+    color: black;
 }
