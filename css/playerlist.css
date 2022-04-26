@@ -111,3 +111,7 @@ p {
     width: 100%;
     padding-left: 15px;
 }
+
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
