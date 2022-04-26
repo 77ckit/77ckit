@@ -18,12 +18,29 @@ h1 {
 }
 
 video {
-    height: 500px;
-    width: 800px;
+    height: 250px;
+    width: 400px;
+}
+.video {
+    display: inline-block;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-bottom: 15px;
+    width: 30%;
 }
 video::-webkit-media-controls-play-button {
     background-color: rgb(39, 36, 247);
     border-radius: 50%;
+}
+
+#V1, #V3 {
+    margin-left: 17%;
 }
 
 #hyperlink a {
