@@ -24,6 +24,9 @@ h3 {
 .team p{
     text-align:center;
 }
+.team a {
+    color: black;
+}
 
 #header h3 {
     display: none;
@@ -121,6 +124,9 @@ h3 {
     width: 25%;
     height: auto;
 }
+#CONTACT p {
+
+}
 
 #SHORTS {
     order: 7;
@@ -165,8 +171,8 @@ h3 {
     #PLAYERLIST {order: 3; width: 80% }
     #HONOURS {order: 4; width: 80% }
     #ALBUM {order: 5; width: 80% }
-    #CONTACT {order: 3; width: 80% }
-    #SHORTS {order: 7; width: 80% }
+    #SHORTS {order: 6; width: 80% }
+    #CONTACT {order: 7; width: 80% }
 
     #header ul {
         display: none;
