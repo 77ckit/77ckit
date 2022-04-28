@@ -32,8 +32,8 @@
                 else
                     gender = document.f1.gender[1].value;
 
-                var index = document.f1.team.selectedIndex;
-                var team = document.f1.team.options[index].value;
+                var index = document.f1.player.selectedIndex;
+                var player = document.f1.player.options[index].value;
 
                 var position = ""
                 var position_len = document.f1.position.length;
@@ -41,7 +41,7 @@
                     if (document.f1.position[i].checked)
                         position = position + document.f1.position[i].value + " ";
                 }
-                alert("The following is the confirmation information: \n" + "Gender: " + gender + "\nDOB: " + dob + "\nEmail: " + email + "\nFavorite Team: " + team + "\nPosition: "  + position);
+                alert("The following is the confirmation information: \n" + "Gender: " + gender + "\nDOB: " + dob + "\nEmail: " + email + "\nFavorite Player: " + player + "\nPosition: "  + position);
 
             }
 
