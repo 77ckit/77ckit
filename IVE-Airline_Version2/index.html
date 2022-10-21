@@ -56,7 +56,11 @@
                 });
 
                 $("body").on("click", "#admin-fm", function() {
-                    alert("debug");
+                    $("#table").html("<table>");
+                    $("#table").append("<tr><th>Flight Number</th><th>Departure Airport</th><th>Destination Airport</th><th>Departure Date & Time</th><th>Arrival Date & Time</th><th>Estimated Ticket Price</th><th>Status</th></tr>");
+                    $("#table").append("<tr><td>CI0904</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>11:05 21 OCT</td><td>12:55 21 OCT</td><td>HK$1,700</td><td>Cancelled</td></tr>");
+                    $("#table").append("<tr><td>CI0910</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>13:30 21 OCT</td><td>15:25 21 OCT</td><td>HK$1,780</td><td>Arrived</td></tr>")
+                    $("#table").append("</table>");
                 });
 
                 // -------------------------------------------
@@ -81,6 +85,13 @@
             }, 3000);
 
         </script>
+        
+        <style>
+            th,td {
+                border: 1px solid;
+            }
+        </style>
+        
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
