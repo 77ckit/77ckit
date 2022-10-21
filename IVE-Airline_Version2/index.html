@@ -27,8 +27,13 @@
                         if (email == jsonData.username[0]) {
                             if (password == jsonData.password[0]) {
                                 alert("Login Successful, Welcome Admin!");
-                                $("#welcome").text("Welcome " + jsonData.username[0]);
+                                $("#dropbtn").val("Welcome " + jsonData.username[0]);
                                 $("#drop-content").hide();
+                                
+                                $("#drop-content").html("<h3 id='admin-h3'>Administrator Function:</h3>"
+                                    + "<input type='button' class='admin-btn' id='admin-am' value='Account Management'/>"
+                                    + "<input type='button' class='admin-btn' id='admin-fm' value='Flight Management' />");
+                                
                             } else {
                                 alert("Wrong Password. If you forget password, click forget password.");
                             }
