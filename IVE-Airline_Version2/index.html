@@ -14,6 +14,12 @@
                     });
                 });
 
+                $("#drop-content").mouseleave(function() {
+                    $("#drop-content").hide();
+                });
+
+
+
                 $("#submit").click(function() {
                     var email = $("#memberNo").val();
                     var password = $("#pw").val();
@@ -22,6 +28,7 @@
                             if (password == jsonData.password[0]) {
                                 alert("Login Successful, Welcome Admin!");
                                 $("#welcome").text("Welcome " + jsonData.username[0]);
+                                $("#drop-content").hide();
                             } else {
                                 alert("Wrong Password. If you forget password, click forget password.");
                             }
