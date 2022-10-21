@@ -115,3 +115,15 @@
     margin-top: 10px;
     margin-left: 100px;
 }
+
+#admin-h3 {
+    display: block;
+    width: 500%;
+}
+
+.admin-btn {
+    display: block;
+    padding: 10px 20px;
+    width: 500%;
+    margin: 10px auto 0px auto;
+}
