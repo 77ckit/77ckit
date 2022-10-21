@@ -10,7 +10,11 @@
                         if (email == jsonData.username[0]) {
                             if (password == jsonData.password[0]) {
                                 alert("Login Successful, Welcome Admin");
-                            }
+                                window.location.href='Administrator.html';
+                            } else {
+                                alert("Wrong Password");
+                        } else {
+                            alert("Wrong Username");
                         }
                     });
                 });
