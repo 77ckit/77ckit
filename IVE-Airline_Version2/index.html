@@ -44,7 +44,20 @@
 
                 // -------------------------------------------
 
+                $("body").on("click", "#admin-am", function() {
+                    $.getJSON('json/accounts.json', function(jsonData) {
+                        $("#table").html("<table id='table-content'>");
+                        $("#table").append("<tr><th style='border: 1px solid;'>Username</th><th>Password</th><th>Email</th><th>Permission</th></tr>");
+                        for (var i = 0; i < 5; i++) {
+                            $("#table").append("<tr><td>" + jsonData.username[i] + "</td><td>" + jsonData.password[i] + "</td><td>" + jsonData.email[i] + "</td><td>" + jsonData.permis[i] + "</td></tr>");
+                        }
+                        $("#table").append("</table>");
+                    });
+                });
 
+                $("body").on("click", "#admin-fm", function() {
+                    alert("debug");
+                });
 
                 // -------------------------------------------
 
