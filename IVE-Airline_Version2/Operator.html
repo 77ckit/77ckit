@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <title>IVE Airline Home Page</title>
+        <script type="text/javascript" src="jslib/jquery-1.11.1.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+
+                // -------------------------------------------
+                //                  Login
+                $("#dropbtn").mouseenter(function() {
+                    $(this).css("background-color", "blue");
+                    $("#drop-content").show();
+                    $("#dropbtn").click(function() {
+                        $("#drop-content").hide();
+                        $("#dropbtn").css("background-color", "rgb(26, 98, 215)");
+                    });
+                });
+
+                $("#drop-content").mouseleave(function() {
+                    $("#drop-content").hide();
+                    $("#dropbtn").css("background-color", "rgb(26, 98, 215)");
+                });
+
+                // -------------------------------------------
+
+                //                  Search
+
+                $("#search").keyup(function(){
+                    $("table tr").hide().filter(":contains('"+ $(this).val() +"')").show();
+                });
+
+                // -------------------------------------------
+            });
+
+            var images = ["images/Kansai.jpg", "images/Shanghai_Pudong.jpg", "images/Taoyuan.jpg"]
+            var index = 0;
+            setInterval(function() {
+                if (index === images.length) {
+                    index = 0;
+                }
+                document.getElementById("image").src = images[index];
+                index++;
+            }, 3000);
+
+        </script>
+        
+        <style>
+            th,td {
+                border: 1px solid;
+                
+            }
+
+            .table {
+                margin-left: 150px;
+            }
+        </style>
+        
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        
+        <div id="header">
+            <img src="images/Logo.png" width="75" height="75"/>
+            <h1>IVE Airline</h1>
+            
+            <div id="searchH">
+                Search: <input type="search" results="5" id="search" name="search" />
+            </div>
+            
+            <div id="dropdown">                
+                <input type="button" id="dropbtn" value="Welcome, Operator" />
+                <p id="welcome"></p>
+                <div id="drop-content">
+                    <div>
+                        <a href="index.html">Logout</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="mainImage">
+                <img src="images/Taoyuan.jpg" id="image">
+            </div>
+
+            <div id="table">
+                <table id="table-content" border="2">
+                    <tr>
+                        <th>Flight Number</th>
+                        <th>Departure Airport</th>
+                        <th>Destination Airport</th>
+                        <th>Departure Date & Time</th>
+                        <th>Arrival Date & Time</th>
+                        <th>Estimated Ticket Price</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td>Hong Kong</td>
+                        <td>Taipei (Taoyuan)</td>
+                        <td>11:05 21 OCT</td>
+                        <td>12:55 21 OCT</td>
+                        <td>HK$1,700</td>
+                        <td>Cancelled</td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0910</td>
+                        <td>Hong Kong</td>
+                        <td>Taipei (Taoyuan)</td>
+                        <td>13:30 21 OCT</td>
+                        <td>15:25 21 OCT</td>
+                        <td>HK$1,780</td>
+                        <td>Arrived</td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>CI0904</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+        <div class="main"></div>
+    </body>
+</html>
