@@ -1,7 +1,9 @@
 #searchH {
-    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-left: 5px;
     display: inline-block;
-    margin-left: 65%;
+    float: right;
+    color: white;
 }
 
 #header {
@@ -42,8 +44,8 @@
     padding-left: 10px;
     display: none;
     position: absolute;
-    top: 28px;
-    right: 35px;
+    top: 22px;
+    left: 150px;
     z-index: 10;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
