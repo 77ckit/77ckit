@@ -48,13 +48,13 @@
                         } else if (email == jsonData.username[3]) {
                             if (password == jsonData.password[3]) {
                                 alert("Login Successful, Welcome " + jsonData.username[3]);
-                                window.location.href='Normal_User.html';
+                                $("#dropbtn").val("Welcome, " + jsonData.username[3]);
                             } else { alert("Wrong Password. If you forget password, click forget password."); } 
                         
                         } else if (email == jsonData.username[4]) {
                             if (password == jsonData.password[4]) {
                                 alert("Login Successful, Welcome " + jsonData.username[4]);
-                                window.location.href='Normal_User.html';
+                                $("#dropbtn").val("Welcome, " + jsonData.username[4]);
                             } else { alert("Wrong Password. If you forget password, click forget password."); } 
                         
                         } else {
