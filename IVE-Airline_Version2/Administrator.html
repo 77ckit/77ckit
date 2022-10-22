@@ -31,6 +31,7 @@
                             $("#table").append("<tr><td>" + jsonData.username[i] + "</td><td>" + jsonData.password[i] + "</td><td>" + jsonData.email[i] + "</td><td>" + jsonData.permis[i] + "</td></tr>");
                         }
                         $("#table").append("</table>");
+                        $("#table").addClass("table");
                     });
                 });
 
@@ -40,6 +41,7 @@
                     $("#table").append("<tr><td>CI0904</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>11:05 21 OCT</td><td>12:55 21 OCT</td><td>HK$1,700</td><td>Cancelled</td></tr>");
                     $("#table").append("<tr><td>CI0910</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>13:30 21 OCT</td><td>15:25 21 OCT</td><td>HK$1,780</td><td>Arrived</td></tr>")
                     $("#table").append("</table>");
+                    $("#table").addClass("table");
                 });
 
                 // -------------------------------------------
@@ -68,6 +70,9 @@
         <style>
             th,td {
                 border: 1px solid;
+                margin-left: 150px;
+            }
+            .table {
                 margin-left: 150px;
             }
         </style>
