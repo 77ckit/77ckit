@@ -5,6 +5,8 @@
         <script type="text/javascript" language="javascript">
             $(document).ready(function() {
 
+                // -------------------------------------------
+                //                  Login
                 $("#dropbtn").mouseenter(function() {
                     $(this).css("background-color", "blue");
                     $("#drop-content").show();
@@ -14,22 +16,41 @@
                     });
                 });
 
-                $("#submit").click(function() {
-                    var email = $("#memberNo").val();
-                    var password = $("#pw").val();
+                $("#drop-content").mouseleave(function() {
+                    $("#drop-content").hide();
+                    $("#dropbtn").css("background-color", "rgb(26, 98, 215)");
+                });
+
+                // -------------------------------------------
+
+                $("#admin-am").click(function() {
                     $.getJSON('json/accounts.json', function(jsonData) {
-                        if (email == jsonData.username[0]) {
-                            if (password == jsonData.password[0]) {
-                                alert("Login Successful, Welcome Admin!");
-                                $("#welcome").text("Welcome " + jsonData.username[0]);
-                            } else {
-                                alert("Wrong Password. If you forget password, click forget password.");
-                            }
-                        } else {
-                            alert("Wrong Username Or Password. You may not a Member yet. Please Register.")
+                        $("#table").html("<table id='table-content' style='margin-left: 250px;'>");
+                        $("#table").append("<tr><th style='border: 1px solid;'>Username</th><th>Password</th><th>Email</th><th>Permission</th></tr>");
+                        for (var i = 0; i < 5; i++) {
+                            $("#table").append("<tr><td>" + jsonData.username[i] + "</td><td>" + jsonData.password[i] + "</td><td>" + jsonData.email[i] + "</td><td>" + jsonData.permis[i] + "</td></tr>");
                         }
+                        $("#table").append("</table>");
                     });
                 });
+
+                $("#admin-fm").click(function() {
+                    $("#table").html("<table id='table-content' style='margin-left: 200px;'>");
+                    $("#table").append("<tr><th>Flight Number</th><th>Departure Airport</th><th>Destination Airport</th><th>Departure Date & Time</th><th>Arrival Date & Time</th><th>Estimated Ticket Price</th><th>Status</th></tr>");
+                    $("#table").append("<tr><td>CI0904</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>11:05 21 OCT</td><td>12:55 21 OCT</td><td>HK$1,700</td><td>Cancelled</td></tr>");
+                    $("#table").append("<tr><td>CI0910</td><td>Hong Kong</td><td>Taipei (Taoyuan)</td><td>13:30 21 OCT</td><td>15:25 21 OCT</td><td>HK$1,780</td><td>Arrived</td></tr>")
+                    $("#table").append("</table>");
+                });
+
+                // -------------------------------------------
+
+                //                  Search
+
+                $("#search").keyup(function(){
+                    $("table tr").hide().filter(":contains('"+ $(this).val() +"')").show();
+                });
+
+                // -------------------------------------------
             });
 
             var images = ["images/Kansai.jpg", "images/Shanghai_Pudong.jpg", "images/Taoyuan.jpg"]
@@ -43,32 +64,33 @@
             }, 3000);
 
         </script>
+        
+        <style>
+            th,td {
+                border: 1px solid;
+                margin-left: 150px;
+            }
+        </style>
+        
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div id="searchH">
-            Search: <input type="search" results="5" id="search" name="search" />
-        </div>
         
         <div id="header">
             <img src="images/Logo.png" width="75" height="75"/>
             <h1>IVE Airline</h1>
+            
+            <div id="searchH">
+                Search: <input type="search" results="5" id="search" name="search" />
+            </div>
+            
             <div id="dropdown">                
-                <input type="button" id="dropbtn" value="Welcome, Administrator" />
+                <input type="button" id="dropbtn" value="Welcome, Admin" />
                 <p id="welcome"></p>
                 <div id="drop-content">
-                    <h3>Member Login</h3>
-                    <form>
-                        <fieldset>
-                            <br>
-                            <input type="text" id="memberNo" placeholder="Email Address" size="30" /> <br>
-                            <input type="password" id="pw" placeholder="Password" size="30"/> <br>
-                            <br>
-                            <input type="submit" id="submit" value="Login" />
-                        </fieldset>
-                        <a href="#">Forget Password</a> <br> <br>
-                        Not a member yet? <a href="#">Join Member</a>
-                    </form>
+                    <h3 id='admin-h3'>Administrator Function:</h3>
+                    <input type='button' class='admin-btn' id='admin-am' value='Account Management'/>
+                    <input type='button' class='admin-btn' id='admin-fm' value='Flight Management'/>
                 </div>
             </div>
         </div>
@@ -79,7 +101,7 @@
             </div>
 
             <div id="table">
-                <table id="table-content" border="1">
+                <table id="table-content" border="2">
                     <tr>
                         <th>Flight Number</th>
                         <th>Departure Airport</th>
@@ -190,68 +212,11 @@
                         <td></td>
                     </tr>
 
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>CI0904</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
 
                 </table>
             </div>
         </div>
+
+        <div class="main"></div>
     </body>
 </html>
